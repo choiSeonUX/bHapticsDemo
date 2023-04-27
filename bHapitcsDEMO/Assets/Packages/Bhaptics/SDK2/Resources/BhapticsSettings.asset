@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: BhapticsSettings
   m_EditorClassIdentifier: 
   appName: 
-  appId: 
-  apiKey: 
+  appId: IHQiTgnsuCxULCu7oC54
+  apiKey: N0VwfRJNpTQ2E9CrLQBf
   lastDeployVersion: -1
   eventData: []
   defaultDeploy: 

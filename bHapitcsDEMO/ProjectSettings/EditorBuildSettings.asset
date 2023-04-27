@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/01 Scenes/bHapitcsDEMO.unity
+    path: Assets/01 Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  m_configObjects: {}
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bc450a58166e135439fda6909982e078,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 5c5a069b60dd4a849b37769328ff05ce,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 56348a90c8bd9d441847450ad83f3f3a,
+      type: 2}
