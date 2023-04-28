@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 64a9568b93a214f428b0331cce0a5b37
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Sugar Peachy
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 625b4926a294af341b8597c15e813792, type: 3}
+  - {fileID: 12800000, guid: 335c874467965ec46884a2ff0cf7ef02, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
