@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class bHapticsEvent : MonoBehaviour
+public class HapticsEvent : MonoBehaviour
 {
     [SerializeField] private Slider angleXSlider;
     [SerializeField] private Slider offsetYSlider;
