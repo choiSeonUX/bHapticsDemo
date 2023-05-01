@@ -10,7 +10,7 @@ public class bHapticsEvent : MonoBehaviour
     [SerializeField] Transform cube;
     [SerializeField] Transform player;
 
-    private float minDistance = 1f;
+    private float minDistance = 0f;
     private float maxDistance = 10f;
     private float intensity;
     private float duration = 1f;
@@ -25,6 +25,11 @@ public class bHapticsEvent : MonoBehaviour
         eventAngles["BOOOMB"] = new Vector2(0f, 0f);
         eventAngles["KNIFE"] = new Vector2(0f, 0f);
 
+
+        //delegate && 무명메소드
+        //angleXSlider.onValueChanged.AddListener(OnSliderValueChanged); 
+        // UnityEvent<float> 형식이므로 OnSliderValueChanged 함수에서 매개변수로 전달해줘야 함
+        // 하지만 delegate를 쓰면 메서드를 다른 메서드에개 함수포인터로 전달가능 
         angleXSlider.onValueChanged.AddListener(delegate { OnSliderValueChanged(); });
         offsetYSlider.onValueChanged.AddListener(delegate { OnSliderValueChanged(); });
     }
@@ -35,6 +40,8 @@ public class bHapticsEvent : MonoBehaviour
         angleXSlider.value = angles.x;
         offsetYSlider.value = angles.y;
         currentEvent = eventName;
+
+        PlayEvent();
     }
 
     public void Gun()
@@ -63,14 +70,6 @@ public class bHapticsEvent : MonoBehaviour
             PlayEvent();
         }
     }
-    public void Reset()
-    {
-        if (!string.IsNullOrEmpty(currentEvent))
-        {
-            SetSliderValues(currentEvent);
-        }
-    }
-
     public void PlayEvent()
     {
         if (string.IsNullOrEmpty(currentEvent)) return;
