@@ -6,9 +6,9 @@ using UnityEngine.UI;
 
 public class HapticsEvent : MonoBehaviour
 {
-    [SerializeField] private Slider angleXSlider;
-    [SerializeField] private Slider offsetYSlider;
-    [SerializeField] private Button playButton;
+    [SerializeField] Slider angleXSlider;
+    [SerializeField] Slider offsetYSlider;
+    [SerializeField] Button playButton;
     [SerializeField] Transform cube;
     [SerializeField] Transform player;
 
